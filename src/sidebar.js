@@ -19,7 +19,7 @@ function Sidebar({ isOpen, toggleMenu, closeMenu }) {
           </div > */}
           <div style={{ justifyContent:"flex-start"}} >
             <ul >
-             <li style={{display:isOpen?"none":"flex" , marginBottom:"20px"}}><img src='/photo/13.png' onClick={toggleMenu} style={{width: "18px",
+             <li style={{display:isOpen?"none":"flex" , marginBottom:"20px"}}><img src={`${process.env.PUBLIC_URL}/photo/13.png`} onClick={toggleMenu} style={{width: "18px",
 height:" 18px" , position:" absolute",left: "50%",transform:" translateX(-50%)"}}></img></li>
             <li style={{display:isOpen?"flex":"none"}} ><div>
             <img  src={`${process.env.PUBLIC_URL}/photo/inline-svg-7.svg`} alt="SVG" className="close-btn" onClick={toggleMenu}  />
