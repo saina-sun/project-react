@@ -67,11 +67,11 @@
               onClick={openMenu}/>
 
             <ul >
-            <li className='mainli'><img src="/photo/inline-svg-3.svg" alt="SVG"/></li>
-            <li className='mainli'><img src="/photo/inline-svg-4.svg" alt="SVG"/></li>
-            <li className='mainli'><img src="/photo/inline-svg-5.svg" alt="SVG"/></li>
-            <li className='mainli'><img src="/photo/6.png" /></li>
-            <li className='mainli'><img src="/photo/7.png" /></li>
+            <li className='mainli'><img src={`${process.env.PUBLIC_URL}/photo/inline-svg-3.svg`} alt="SVG"/></li>
+            <li className='mainli'><img src={`${process.env.PUBLIC_URL}/photo/inline-svg-4.svg`} alt="SVG"/></li>
+            <li className='mainli'><img src={`${process.env.PUBLIC_URL}/photo/inline-svg-5.svg`} alt="SVG"/></li>
+            <li className='mainli'><img src={`${process.env.PUBLIC_URL}/photo/6.png`} /></li>
+            <li className='mainli'><img src={`${process.env.PUBLIC_URL}/photo/7.png`} /></li>
             </ul>
            
              <HoverableIcon 
