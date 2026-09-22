@@ -23,7 +23,7 @@ function App() {
 
       
          <>
-     <div style={{display:"flex"}}>
+     <div style={{display:"flex", width:"100%", minHeight:"100vh", height:"100dvh"}}>
       <div  style={{ position: "relative"}}className={`mobileSideBar${isOpen ? "hide":""}`} onClick={toggleMenu}><img src={`${process.env.PUBLIC_URL}/photo/32.png`} style={{ position: "absolute",left: "50%",transform: "translateX(-50%)"}}/><HoverableIcon style={{visibiliy:"hidden"}}tooltipText="Open sidebar"/></div>
        <Sidebar 
         isOpen={isOpen} 

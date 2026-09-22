@@ -10,13 +10,7 @@ function Sidebar({ isOpen, toggleMenu, closeMenu }) {
         {/* ===== سایدبار ===== */}
         <div className="sidebar-inner" style={{display: "flex", flexDirection: "column" }}>
           
-          {/* دکمه بستن  که داخل خود سایدبار قرار گرفته */}
-          {/* <div style={{ display:"flex",justifyContent:"space-between",marginBottom:"-25px", marginTop:"0px" ,className:"sidebar-header"}}>
-            <img src={`${process.env.PUBLIC_URL}/photo/inline-svg-7.svg`} alt="SVG" className="close-btn"/>
-            <div></div>
-             
-
-          </div > */}
+          
           <div style={{ justifyContent:"flex-start"}} >
             <ul >
              <li style={{display:isOpen?"none":"flex" , marginBottom:"20px"}}><img src={`${process.env.PUBLIC_URL}/photo/13.png`} onClick={toggleMenu} style={{width: "18px",
