@@ -552,6 +552,13 @@ body,
     width: auto !important;       /* پر کردن بین left و right */
     max-width: none !important;
     margin: 0 !important;
+    padding: 4px 6px !important;
+    gap: 2px !important;
+    justify-content: flex-start !important;   /* space-evenly رو خنثی کن */
+    box-sizing: border-box !important;
+    height: 55px !important;
+    overflow: hidden !important;
+    z-index: 5;
   }
     
     
@@ -625,25 +632,27 @@ position: fixed !important;
   align-items: center;
   justify-content: center;
   align-content: center;
-
+  z-index: 100;
 }
 .mobileSideBar img{
   width: 60%;
   height: auto;
 }
 
-.input-box {
- width: 100%;
- margin: 0px;
 
-}
 
   
   .main-content.shifted {
     margin-left: 0;
     width: 100%;
   }
- 
+  .main-input{
+   flex: 1 1 0 !important;   /* فضای باقی‌مونده رو بگیر، فشرده شو */
+  min-width: 0 !important;   /* ← کلید حل مشکل */
+  width: 0 !important;       /* flex-basis رو واقعاً صفر کن */
+  padding: 12px 6px !important;
+  font-size: 14px !important;
+  }
 
 
 }
