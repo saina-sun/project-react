@@ -8,30 +8,30 @@ function HoverableIcon({
   alt = 'icon',   
   width="17px",
   height="16px",
-  margin= '0',   // برای وسط‌چین کردن
+  margin= '0',   
   padding='0',
   className = '',
   onClick, 
-  tooltipText = '',     // <-- اضافه کن
-  tooltipStyle = {} ,       // <-- پراپ onClick رو اضافه کردیم
-  style = {}      // برای استایل‌های اضافی
+  tooltipText = '',     
+  tooltipStyle = {} ,      
+  style = {}      
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
       className={className}
-      onClick={onClick}  // <-- پاس دادن onClick به div بیرونی
+      onClick={onClick} 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
         position: 'absolute',
         cursor: 'pointer',
-        margin: '0',   // برای وسط‌چین کردن
+        margin: '0',   
              padding:'0',
         width: width,
         height: height,
-        ...style, // ترکیب با استایل‌های ورودی
+        ...style, 
       }}
     >
       {/* ===== دیو سمت راست ===== */}
