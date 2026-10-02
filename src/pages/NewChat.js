@@ -5,10 +5,7 @@ import HoverableIcon from '../component/HoverableIcon';
 
 
 function NewChat() {
-  const [isOpen, setIsOpen] = useState(false);
-
   
-    const toggleMenu=()=>setIsOpen(!isOpen);
 
     const inputRef = useRef(null);
 
@@ -20,12 +17,10 @@ function NewChat() {
     
       
          <>
-     <div style={{display:"flex", width:"100%", minHeight:"100vh", height:"100dvh"}}>
-      <div  style={{ position: "relative"}}className={`mobileSideBar${isOpen ? "hide":""}`} onClick={toggleMenu}><img src={`${process.env.PUBLIC_URL}/photo/32.png`} style={{ position: "absolute",left: "50%",transform: "translateX(-50%)"}}/><HoverableIcon style={{visibiliy:"hidden"}}tooltipText="Open sidebar"/></div>
-       
+    
      
-      <main className={`main-content ${isOpen ? 'shifted' : ''}`}>
-         <div  className="main-inner">
+     
+      
             <div className="top-title" style={{display:"flex",justifyContent:"space-between", width:"100%"}}>
               <div  className="lipop chattext" style={{display:"flex"}}>
                 <p  style={{ fontSize: "15px", fontWeight: "bold", margin: 0 }}>ChatGPT</p>
@@ -68,7 +63,7 @@ function NewChat() {
                 
              
           </div>
-        </div>
+       
        <p className="policy" style={{
   position: "absolute",
   bottom: "5px",
@@ -81,12 +76,7 @@ function NewChat() {
 }}>
   ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be reviewed and used to improve our AI models. Learn more
 </p>
-      </main>
-      
-
-     </div>
-
-    
+     
       
       </> 
   );
