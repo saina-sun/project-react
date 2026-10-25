@@ -1,25 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    background-color: #000000; 
+  height: 100%;
+  background-color: #000000;
 }
 
 body {
-    height: 100%;
-    background-color: #000000; 
-    overflow-x: hidden;
-    margin: 0;
-    padding: 5px;
-    font-family: sans-serif;
-   
+  height: 100%;
+  background-color: #000000;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 5px;
+  font-family: sans-serif;
+
 }
 
- 
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -30,21 +30,23 @@ body {
   z-index: 1000;
   border-right: 1px solid #1A1A1A;
   overflow: hidden;
-  
+
   /* حالت بسته: عرض باریک */
-   width: 45px;
+  width: 45px;
   padding: 20px 0px;
   transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   /* انیمیشن نرم */
-  
+
 }
+
 .sidebar.open {
   width: 260px;
   padding: 20px 16px;
   transform: translateX(0);
   overflow: visible;
 }
+
 .sidebar-inner {
   width: 228px;
   min-width: 228px;
@@ -57,6 +59,7 @@ body {
   justify-content: flex-end;
   margin-bottom: 20px;
 }
+
 .app-wrapper {
   position: relative;
   width: 100%;
@@ -78,6 +81,7 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .menu-btn:hover {
   background: #000000;
 }
@@ -96,15 +100,16 @@ body {
   flex-direction: column;
   gap: 4px;
 }
+
 .sidebar ul li {
   display: flex;
   align-items: center;
-  
+
   gap: 12px;
   padding: 8px 10px;
   border-radius: 8px;
   cursor: pointer;
-  transition:background 0.2s;
+  transition: background 0.2s;
   white-space: nowrap;
 }
 
@@ -112,10 +117,11 @@ body {
 
 .sidebar ul li img {
   width: 18px;
-height: 18px;
- flex-shrink: 0;
- 
+  height: 18px;
+  flex-shrink: 0;
+
 }
+
 .sidebar ul li .label {
   opacity: 0;
   visibility: hidden;
@@ -142,6 +148,7 @@ height: 18px;
   visibility: hidden;
   transition: opacity 0.35s ease, visibility 0.35s ease;
 }
+
 .overlay.show {
   opacity: 1;
   visibility: visible;
@@ -152,39 +159,41 @@ height: 18px;
 .main-content.hidden {
   display: none;
 }
-div.side{
-  width: 25px; 
+
+div.side {
+  width: 25px;
   height: 100%;
   border: 1px solid #1A1A1A;
-  
-}
-
-.close-btn{
- 
-align-items: flex-start;
-align-content: flex-start;
-
-width: 25px;
-height: 25px;
 
 }
 
-.mainli img{
+.close-btn {
+
+  align-items: flex-start;
+  align-content: flex-start;
+
+  width: 25px;
+  height: 25px;
+
+}
+
+.mainli img {
   width: 18px;
-height: 18px;
+  height: 18px;
 }
-.mainli{
+
+.mainli {
   padding: 0px 0px;
   width: 228px;
   min-width: 228px;
   font-size: 15px;
   cursor: pointer;
-  display: flex;          
-  align-items: center;    
-  gap: 10px;              
+  display: flex;
+  align-items: center;
+  gap: 10px;
   list-style: none;
   flex-shrink: 0;
-  
+
 }
 
 
@@ -192,13 +201,14 @@ height: 18px;
   background: #1A1A1A;
   border-radius: 8px;
 }
+
 .sidebar:not(.open) .sidebar-inner {
   width: 45px;
   min-width: 45px;
   max-width: 228px;
 }
 
- 
+
 
 .sidebar:not(.open) .mainli {
   width: calc(100% - 4px);
@@ -220,24 +230,26 @@ height: 18px;
 .sidebar:not(.open) .mainli {
   justify-content: center;
 }
-.reqOpen{
-  display:flex;
+
+.reqOpen {
+  display: flex;
   flex-direction: column;
   border-top: 1px solid #1A1A1A;
   justify-content: center;
   align-content: center;
 }
-.reqOpen p{
+
+.reqOpen p {
   font-size: 13px;
   margin: 10px;
 }
 
-.reqOpen h2{
+.reqOpen h2 {
   font-size: 13px;
   margin: 10px;
 }
 
-.reqOpen button{
+.reqOpen button {
   width: 200px;
   height: 35px;
   margin: 10px;
@@ -246,29 +258,32 @@ height: 18px;
   border-radius: 25px;
   color: white;
 }
-.reqClosed{
-  display:none;
+
+.reqClosed {
+  display: none;
 }
-.testName{
+
+.testName {
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
 }
-.testName p{
- font-weight: bold;
- color: white;
+
+.testName p {
+  font-weight: bold;
+  color: white;
 
 }
 
-.iconOpen{
+.iconOpen {
   display: none;
 }
 
-.iconClosed{
+.iconClosed {
   display: flex;
 }
 
-.sidebar:not(.open) .mainli > img:first-child {
+.sidebar:not(.open) .mainli>img:first-child {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -312,6 +327,9 @@ height: 18px;
   position: relative;
 }
 
+.plugs:hover {
+  background-color: #2d2d2d;
+}
 
 /* عنوان بالای صفحه */
 
@@ -326,7 +344,7 @@ height: 18px;
   gap: 10px;
 }
 
-.top-title:not(.popup-container) p  {
+.top-title:not(.popup-container) p {
   font-size: 10px;
   font-weight: bold;
 }
@@ -337,7 +355,7 @@ height: 18px;
 .welcome-text {
   font-size: 25px;
   font-weight: 500;
-   top:30%;
+  top: 30%;
   margin-bottom: 160px;
 }
 
@@ -347,7 +365,7 @@ height: 18px;
 .input-box {
   display: flex;
   align-items: center;
-  gap:2px;
+  gap: 2px;
   justify-content: space-evenly;
   width: 100%;
   max-width: 770px;
@@ -357,7 +375,7 @@ height: 18px;
   border-radius: 50px;
 
   padding: 5px;
-   position: absolute;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #3e3e3e;
@@ -403,12 +421,12 @@ height: 18px;
 }
 
 
-.lipop{
-position: relative;
+.lipop {
+  position: relative;
 
 }
 
-.popup-container{
+.popup-container {
   position: absolute;
   left: 100%;
   top: 0;
@@ -420,25 +438,29 @@ position: relative;
   opacity: 1;
   visibility: visible;
 }
- .policy{
-    
-    white-space: nowrap;
-  }
+
+.policy {
+
+  white-space: nowrap;
+}
 
 
 
-.mobileSideBar:hover{
+.mobileSideBar:hover {
   background-color: #2f2f2f;
-  
+
 }
-.imghide{
- visibility: hidden;
+
+.imghide {
+  visibility: hidden;
 }
-.imgshow{
+
+.imgshow {
   visibility: visible;
 }
-.mobileSideBarhide{
- visibility: hidden;
+
+.mobileSideBarhide {
+  visibility: hidden;
 }
 
 .plus {
@@ -458,26 +480,27 @@ position: relative;
   border-radius: 50%;
 }
 
-.mobileSideBar{
+.mobileSideBar {
   display: none;
 }
 
-.chattext{
+.chattext {
   width: 90px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top:1px;
-     margin-right: 5px
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1px;
+  margin-right: 5px
 }
-.chattext:hover{
-    background-color: #212121;
-    border-radius: 10px;
-    
-  }
 
-  html,
+.chattext:hover {
+  background-color: #212121;
+  border-radius: 10px;
+
+}
+
+html,
 body,
 #root {
   width: 100%;
@@ -495,8 +518,103 @@ body,
   color: white;
   text-decoration: none;
 }
-@media (max-width: 700px ) {
-  html, body, #root {
+
+.loginbtn {
+  width: 400px;
+  height: 60px;
+  background-color: #212121;
+  border: solid 0.5px rgba(128, 128, 128, 0.5);
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.loginconbtn {
+  width: 400px;
+  height: 60px;
+  background-color:white;
+  border: solid 0.5px white;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  color: #000;
+  
+
+}
+.loginconbtn button{
+  outline: none;
+  border:none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.loginbtn img {
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  margin-right: 5px;
+}
+
+.logininput {
+  width: 400px;
+  height: 60px;
+  background-color: #000000;
+  border: solid 0.5px rgba(128, 128, 128, 0.5);
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  justify-content: flex-start;
+}
+
+.logininput:focus-within{
+  border:solid white 1px;
+}
+
+.logininput input {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 20px;
+  color: white;
+  
+}
+
+.textLink{
+  color:white;
+  font-size:15px;
+  margin:5px;
+   text-decoration-color:white
+}
+
+select{
+  height:20px;
+   outline: none;
+   background: transparent;
+   border: none;
+   color:white
+}
+select option{
+  width:100%;
+  color: #000;
+}
+
+@media (max-width: 700px) {
+
+  html,
+  body,
+  #root {
     width: 100%;
     height: 100%;
     height: 100dvh;
@@ -505,30 +623,31 @@ body,
     padding: 0 !important;
     overflow: hidden;
   }
-  
-  
-  
 
-  
- .welcome-text {
+
+
+
+
+  .welcome-text {
     position: fixed !important;
-  top: 40% !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 10px !important;
-  text-align: center;
+    top: 40% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    text-align: center;
 
   }
+
   .main-content {
     width: 100% !important;
     height: 100dvh;
     min-height: 100dvh;
     margin: 0px !important;
     padding: 0px;
-    
+
   }
 
   .main-inner {
@@ -537,67 +656,75 @@ body,
     min-height: 100dvh;
     position: relative;
   }
- 
-  .sidebar:not(.open){
-    
+
+  .sidebar:not(.open) {
+
     display: none;
   }
-  .chattext{
+
+  .chattext {
     justify-content: center;
-    max-width:600px ;
+    max-width: 600px;
     margin: 5px;
     font-size: 40px !important;
     align-content: center;
   }
 
-  
 
-   
-    .input-box {
+
+
+  .input-box {
     position: fixed !important;
-    top: 50% !important;          /* از بالا ۵۰٪ */
-    left: 10px !important;        /* ۱۰px از چپ */
-    right: 10px !important;       /* ۱۰px از راست */
+    top: 50% !important;
+    /* از بالا ۵۰٪ */
+    left: 10px !important;
+    /* ۱۰px از چپ */
+    right: 10px !important;
+    /* ۱۰px از راست */
     bottom: auto !important;
-    transform: translateY(-50%) !important;  /* جبران ارتفاع خود اینپوت */
-    width: auto !important;       /* پر کردن بین left و right */
+    transform: translateY(-50%) !important;
+    /* جبران ارتفاع خود اینپوت */
+    width: auto !important;
+    /* پر کردن بین left و right */
     max-width: none !important;
     margin: 0 !important;
     padding: 4px 6px !important;
     gap: 2px !important;
-    justify-content: flex-start !important;   /* space-evenly رو خنثی کن */
+    justify-content: flex-start !important;
+    /* space-evenly رو خنثی کن */
     box-sizing: border-box !important;
     height: 55px !important;
     overflow: hidden !important;
-    
+
   }
-    
-    
-  
-   .top-title {
+
+
+
+  .top-title {
     justify-content: center !important;
     position: fixed;
   }
 
-  .mobile{
+  .mobile {
     display: none !important;
   }
-  .login{
-    position: absolute;
-    right: 0px!important;
-    top:0px!important;
-    height: 40px!important;
-    width: 70px!important;
-    margin-right: 20px;
-    
-  }
-  
 
- 
+  .login {
+    position: absolute;
+    right: 0px !important;
+    top: 0px !important;
+    height: 40px !important;
+    width: 70px !important;
+    margin-right: 20px;
+
+  }
+
+
+
   .main-content {
     margin: 0;
     padding: 2px;
-     margin-left: 0 !important;
+    margin-left: 0 !important;
     width: 100% !important;
   }
 
@@ -615,11 +742,12 @@ body,
     margin: 0;
     width: 100%;
   }
-  .policy{
+
+  .policy {
     width: 100%;
     white-space: normal;
-overflow-wrap: break-word;
-position: fixed !important;
+    overflow-wrap: break-word;
+    position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;
     transform: none !important;
@@ -631,39 +759,53 @@ position: fixed !important;
     text-align: center;
   }
 
-.mobileSideBar{
-  visibility: visible;
-  display: flex;
-   height: 40px!important;
-    width: 45px!important;
-  background-color: #1f1f1f;
-  border: solid 1px #5d5c5c;
-  border-radius: 20px;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  z-index: 100;
-}
-.mobileSideBar img{
-  width: 60%;
-  height: auto;
-  
-}
+  .mobileSideBar {
+    visibility: visible;
+    display: flex;
+    height: 40px !important;
+    width: 45px !important;
+    background-color: #1f1f1f;
+    border: solid 1px #5d5c5c;
+    border-radius: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    z-index: 100;
+  }
+
+  .mobileSideBar img {
+    width: 60%;
+    height: auto;
+
+  }
 
 
 
-  
+
   .main-content.shifted {
     margin-left: 0;
     width: 100%;
   }
-  .main-input{
-   flex: 1 1 0 !important;   /* فضای باقی‌مونده رو بگیر، فشرده شو */
-  min-width: 0 !important;   /* ← کلید حل مشکل */
-  width: 0 !important;       /* flex-basis رو واقعاً صفر کن */
-  padding: 12px 6px !important;
-  font-size: 14px !important;
+
+  .main-input {
+    flex: 1 1 0 !important;
+    /* فضای باقی‌مونده رو بگیر، فشرده شو */
+    min-width: 0 !important;
+    /* ← کلید حل مشکل */
+    width: 0 !important;
+    /* flex-basis رو واقعاً صفر کن */
+    padding: 12px 6px !important;
+    font-size: 14px !important;
+  }
+
+  .mainpldiv {
+    grid-template-columns: repeat(1, 1fr) !important;
+
+  }
+
+  .mainPlugs {
+    padding: 0px 30px !important;
   }
 
 

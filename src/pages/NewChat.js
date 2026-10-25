@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../App.css';
-import Pop from '../component/PopUp'
+import Pop from '../component/PopUp';
 import HoverableIcon from '../component/HoverableIcon';
 
 
@@ -21,7 +21,7 @@ function NewChat() {
      
      
       
-            <div className="top-title" style={{display:"flex",justifyContent:"space-between", width:"100%"}}>
+            <div className="top-title" style={{display:"flex",justifyContent:"space-between", width:"100%",backgroundColor:"red"}}>
               <div  className="lipop chattext" style={{display:"flex"}}>
                 <p  style={{ fontSize: "15px", fontWeight: "bold", margin: 0 }}>ChatGPT</p>
                 <img src={`${process.env.PUBLIC_URL}/photo/inline-svg-20.svg`} alt="SVG" className='mobile' style={{ width: "15px", height: "15px" }} />

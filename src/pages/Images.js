@@ -1,7 +1,7 @@
 function Images() {
   return (
     <h1 style={{ color: "white" }}>
-      Images
+      Images jjkjkj
     </h1>
   );
 }
